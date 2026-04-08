@@ -1,0 +1,23 @@
+async_slam_toolbox_node:
+  ros__parameters:
+    # Frames - כאן הקסם קורה
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_laser # אנחנו אומרים לו שהבסיס הוא הלייזר
+    scan_topic: /scan
+
+    # מוד עבודה - חיוני ללא אודומטריה
+    mode: mapping 
+    
+    # פרמטרים של הלייזר
+    max_laser_range: 12.0
+    minimum_time_interval: 0.1
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.
+    stack_size_to_use: 40000000
+    
+    # התאמת סריקות (Scan Matching) - נגביר את הרגישות כי אין גלגלים
+    use_scan_matching: true
+    use_scan_barycenter: true
+    minimum_travel_distance: 0.1
+    minimum_travel_heading: 0.1
