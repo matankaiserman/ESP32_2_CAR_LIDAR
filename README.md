@@ -14,9 +14,10 @@ This project implements a robust communication and estimation layer for a differ
 *Real-time SLAM Toolbox occupancy grid and EKF-stabilized odometry visualized in RViz2.*
 
 ### Operation Videos
+
 | Robot in Action | System Telemetry (PC View) |
 | :---: | :---: |
-|https://github.com/user-attachments/assets/3132d2cf-df7c-4d38-b830-a35fa53db556|https://github.com/user-attachments/assets/1547e026-9fb2-4679-91d2-c74761642c2b|
+| <video src="https://github.com/user-attachments/assets/3132d2cf-df7c-4d38-b830-a35fa53db556" width="300" controls></video> | <video src="https://github.com/user-attachments/assets/1547e026-9fb2-4679-91d2-c74761642c2b" width="300" controls></video> |
 | *Physical movement and environment interaction.* | *ROS 2 topics, TF tree, and map updates.* |
 
 
