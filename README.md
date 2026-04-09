@@ -17,8 +17,10 @@ This project implements a robust communication and estimation layer for a differ
 ### Operation Videos
 | Robot in Action | System Telemetry (PC View) |
 | :---: | :---: |
-| ![Operation Overview](assets/over_view.mp4) https://github.com/user-attachments/assets/d8c74bbf-09e7-4632-a394-2a6ed7cc3f1a|![Computer Visualization](assets/computer_view.mp4) https://github.com/user-attachments/assets/d03d8ed2-c1e2-401a-bbbf-22960aa76647|
+| ![Operation Overview](assets/over_view.mp4) https://github.com/user-attachments/assets/d8c74bbf-09e7-4632-a394-2a6ed7cc3f1a|![Computer Visualization](assets/computer_view.mp4) https://github.com/user-attachments/assets/247a0653-1d05-4b1d-bb09-fbc8c9300811|
 | *Physical movement and environment interaction.* | *ROS 2 topics, TF tree, and map updates.* |
+
+
 
 ---
 
