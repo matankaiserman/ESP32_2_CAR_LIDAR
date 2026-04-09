@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/1547e026-9fb2-4679-91d2-c74761642c2b
 # Autonomous Robot Bridge & EKF Integration (ROS 2)
 
 This project implements a robust communication and estimation layer for a differential drive robot using **ESP32**, **ROS 2 (Humble)**, and a **LiDAR Delta-2G**. The system features a distributed multi-MCU architecture for high-speed sensor data processing and real-time visualization.
@@ -15,7 +17,8 @@ This project implements a robust communication and estimation layer for a differ
 ### Operation Videos
 | Robot in Action | System Telemetry (PC View) |
 | :---: | :---: |
-| ![Operation Overview](assets/over_view.mp4) | ![Computer Visualization](assets/computer_view.mp4) |
+| ![Operation Overview](assets/over_view.mp4) https://github.com/user-attachments/assets/d8c74bbf-09e7-4632-a394-2a6ed7cc3f1a|
+![Computer Visualization](assets/computer_view.mp4) https://github.com/user-attachments/assets/d03d8ed2-c1e2-401a-bbbf-22960aa76647|
 | *Physical movement and environment interaction.* | *ROS 2 topics, TF tree, and map updates.* |
 
 ---
@@ -38,7 +41,11 @@ To optimize processing power and minimize latency, the robot utilizes three dedi
 ## 📊 Data Flow
 1. **LiDAR Node** → (Serial/I2C) → **Main Gateway** → (UDP 8888) → `lidar_bridge` → `/scan`
 2. **Vision Node** → (UDP/HTTP) → `video_stream_node` → `/camera/image_raw`
-3. **Encoders/IMU** → **Main Gateway** → (UDP 8888) → `motor_bridge` → `/odom` & `/imu/data`
+3. **Encoders/IMU** → **Main Gateway** → (UDP 
+
+https://github.com/user-attachments/assets/3132d2cf-df7c-4d38-b830-a35fa53db556
+
+8888) → `motor_bridge` → `/odom` & `/imu/data`
 4. **EKF Node** → Sensor Fusion → `TF: odom -> base_link`
 5. **SLAM Toolbox** → Map Generation → `TF: map -> odom`
 
