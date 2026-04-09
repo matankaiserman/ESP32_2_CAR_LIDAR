@@ -1,0 +1,47 @@
+[0.557s] Invoking command in '/home/matan/ros2_ws/src/esp32_bridge_pkg': PYTHONPATH=/home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/esp32_bridge_pkg build --build-base /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build install --record /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/install.log --single-version-externally-managed install_data
+[0.686s] running egg_info
+[0.686s] creating build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info
+[0.686s] writing build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/PKG-INFO
+[0.687s] writing dependency_links to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/dependency_links.txt
+[0.687s] writing entry points to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/entry_points.txt
+[0.687s] writing requirements to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/requires.txt
+[0.687s] writing top-level names to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/top_level.txt
+[0.687s] writing manifest file 'build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/SOURCES.txt'
+[0.689s] reading manifest file 'build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/SOURCES.txt'
+[0.689s] writing manifest file 'build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/SOURCES.txt'
+[0.689s] running build
+[0.689s] running build_py
+[0.690s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build
+[0.690s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib
+[0.690s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+[0.690s] copying esp32_bridge_pkg/bridge_node.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+[0.691s] copying esp32_bridge_pkg/__init__.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+[0.691s] copying esp32_bridge_pkg/lidar_bridge.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+[0.692s] running install
+[0.692s] running install_lib
+[0.692s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+[0.693s] copying /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg/bridge_node.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+[0.693s] copying /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg/__init__.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+[0.693s] copying /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg/lidar_bridge.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+[0.693s] byte-compiling /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg/bridge_node.py to bridge_node.cpython-310.pyc
+[0.695s] byte-compiling /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg/__init__.py to __init__.cpython-310.pyc
+[0.695s] byte-compiling /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg/lidar_bridge.py to lidar_bridge.cpython-310.pyc
+[0.696s] running install_data
+[0.696s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index
+[0.696s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index/resource_index
+[0.696s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index/resource_index/packages
+[0.697s] copying resource/esp32_bridge_pkg -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index/resource_index/packages
+[0.698s] copying package.xml -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg
+[0.698s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/launch
+[0.698s] copying launch/robot_launch.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/launch
+[0.699s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/urdf
+[0.699s] copying urdf/robot.urdf -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/urdf
+[0.700s] creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/config
+[0.700s] copying config/mapper_params.yaml -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/config
+[0.700s] running install_egg_info
+[0.701s] Copying build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info to /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg-0.0.0-py3.10.egg-info
+[0.702s] running install_scripts
+[0.714s] Installing lidar_bridge script to /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/esp32_bridge_pkg
+[0.715s] Installing motor_bridge script to /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/esp32_bridge_pkg
+[0.715s] writing list of installed files to '/home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/install.log'
+[0.729s] Invoked command in '/home/matan/ros2_ws/src/esp32_bridge_pkg' returned '0': PYTHONPATH=/home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/esp32_bridge_pkg build --build-base /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build install --record /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/install.log --single-version-externally-managed install_data

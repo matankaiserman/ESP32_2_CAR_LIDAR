@@ -1,0 +1,45 @@
+running egg_info
+creating build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info
+writing build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/PKG-INFO
+writing dependency_links to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/dependency_links.txt
+writing entry points to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/entry_points.txt
+writing requirements to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/requires.txt
+writing top-level names to build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/top_level.txt
+writing manifest file 'build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/SOURCES.txt'
+reading manifest file 'build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/SOURCES.txt'
+writing manifest file 'build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+copying esp32_bridge_pkg/bridge_node.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+copying esp32_bridge_pkg/__init__.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+copying esp32_bridge_pkg/lidar_bridge.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg
+running install
+running install_lib
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+copying /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg/bridge_node.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+copying /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg/__init__.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+copying /home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/build/lib/esp32_bridge_pkg/lidar_bridge.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg
+byte-compiling /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg/bridge_node.py to bridge_node.cpython-310.pyc
+byte-compiling /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg/lidar_bridge.py to lidar_bridge.cpython-310.pyc
+running install_data
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index/resource_index
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index/resource_index/packages
+copying resource/esp32_bridge_pkg -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/launch
+copying launch/robot_launch.py -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/launch
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/urdf
+copying urdf/robot.urdf -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/urdf
+creating /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/config
+copying config/mapper_params.yaml -> /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/share/esp32_bridge_pkg/config
+running install_egg_info
+Copying build/esp32_bridge_pkg/esp32_bridge_pkg.egg-info to /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/python3.10/site-packages/esp32_bridge_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing lidar_bridge script to /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/esp32_bridge_pkg
+Installing motor_bridge script to /home/matan/ros2_ws/src/esp32_bridge_pkg/install/esp32_bridge_pkg/lib/esp32_bridge_pkg
+writing list of installed files to '/home/matan/ros2_ws/src/esp32_bridge_pkg/build/esp32_bridge_pkg/install.log'

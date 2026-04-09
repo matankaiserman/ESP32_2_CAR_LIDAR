@@ -41,3 +41,19 @@ To optimize processing power and minimize latency, the robot utilizes three dedi
 3. **Encoders/IMU** → **Main Gateway** → (UDP 8888) → `motor_bridge` → `/odom` & `/imu/data`
 4. **EKF Node** → Sensor Fusion → `TF: odom -> base_link`
 5. **SLAM Toolbox** → Map Generation → `TF: map -> odom`
+
+### ⚡ Electrical Power Architecture
+The system is powered by a high-capacity **Power Bank**, providing a stable and protected energy source for the entire cluster:
+
+- **Power Rails:** Dual-bus distribution separating **Actuator Power** from **Logic Power** to mitigate EMI.
+- **Voltage Regulation:** High-efficiency buck converters maintain a constant 5V/3.3V rail for the ESP32 units, ensuring consistent performance even as the Power Bank discharges.
+- **Enhanced Wiring:** Custom low-resistance power cabling and bulk capacitors integrated to prevent voltage drops during high-torque motor maneuvers.
+
+### 🛑 Safety & Fail-safe Mechanisms (Watchdog)
+As a critical safety feature for autonomous operation:
+- **Communication Timeout:** The Main Gateway implements a **Software Watchdog**. If no command is received from the ROS 2 host within 500ms, the robot immediately enters a **Safety-Stop** state, cutting power to the motors.
+- **Hardware Protection:** Leveraging the Power Bank's built-in over-current and short-circuit protection for robust field operation.
+
+### 📏 Custom Hardware Integration
+- **DIY Encoders:** Designed and calibrated custom optical/magnetic encoders for real-time wheel odometry, providing the pulse-count necessary for the EKF velocity estimation.
+- **Physical Integration:** Modular mounting system for all three ESP32 nodes and the LiDAR, ensuring structural rigidity and optimal sensor alignment.

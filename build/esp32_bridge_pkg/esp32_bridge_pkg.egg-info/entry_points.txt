@@ -1,0 +1,4 @@
+[console_scripts]
+lidar_bridge = esp32_bridge_pkg.lidar_bridge:main
+motor_bridge = esp32_bridge_pkg.bridge_node:main
+
