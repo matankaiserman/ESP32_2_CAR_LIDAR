@@ -8,7 +8,7 @@ def generate_launch_description():
     urdf_file = os.path.join(get_package_share_directory(package_name), 'urdf', 'robot.urdf')
 
     return LaunchDescription([
-        # 1. Robot State Publisher - קורא את ה-URDF ושולח TF
+        # 1. Robot State Publisher
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -17,21 +17,59 @@ def generate_launch_description():
             parameters=[{'robot_description': open(urdf_file).read()}]
         ),
 
-        # 2. ה-Bridge של הליידר (הקוד המעודכן שלך)
+        # 2. ה-Bridge של הליידר
         Node(
             package=package_name,
             executable='lidar_bridge',
             output='screen'
         ),
         
-        # 3. ה-Bridge של האודומטריה
+        # 3. ה-Bridge של המנועים (האודומטריה וה-IMU)
         Node(
             package=package_name,
             executable='motor_bridge',
             output='screen'
         ),
 
-        # 4. SLAM Toolbox
+        # 4. EKF Node - "המוח" שמשלב אודומטריה ו-IMU
+        Node(
+            package='robot_localization',
+            executable='ekf_node',
+            name='ekf_filter_node',
+            output='screen',
+            parameters=[{
+                'use_sim_time': False,
+                'frequency': 50.0,
+                'sensor_timeout': 0.1,
+                'two_d_mode': True, # אנחנו רובוט שנוסע על רצפה
+                'publish_tf': True, # ה-EKF עכשיו אחראי על ה-TF!
+
+                'map_frame': 'map',
+                'odom_frame': 'odom',
+                'base_link_frame': 'base_link',
+                'world_frame': 'odom',
+
+                # הגדרת אודומטריה (מהגלגלים)
+                'odom0': '/odom',
+                'odom0_config': [False,  False,  False, # x, y, z
+                                 False, False, False,  # roll, pitch, yaw
+                                 True, False, False, # vx, vy, vz
+                                 False, False, False, # vroll, vpitch, vyaw
+                                 False, False, False],# ax, ay, az
+
+                # הגדרת IMU
+                'imu0': '/imu/data',
+                'imu0_config': [False, False, False, # x, y, z
+                                False, False, False,  # roll, pitch, yaw (מסתמכים על הגירו לסיבוב)
+                                False, False, False, # vx, vy, vz
+                                False, False, True,  # vroll, vpitch, vyaw (מהירות זוויתית)
+                                False,  False,  False],# ax, ay, az (תאוצה קווית)
+                
+                'imu0_relative': True # מתייחס לשינוי יחסי ולא לערך מוחלט (מצפן)
+            }]
+        ),
+
+        # 5. SLAM Toolbox
         Node(
             package='slam_toolbox',
             executable='async_slam_toolbox_node',
@@ -49,7 +87,7 @@ def generate_launch_description():
             }]
         ),
 
-        # 5. RViz2
+        # 6. RViz2
         Node(
             package='rviz2',
             executable='rviz2',
